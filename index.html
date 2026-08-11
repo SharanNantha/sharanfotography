@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Photography portfolio of Sharan — moments from Tamil Nadu to the Maldives, through nature, travel, wildlife and light.">
+<title>Sharan — Through My Lens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav><a class="brand" href="#">SHARAN<span> / PHOTOGRAPHY</span></a><a class="navlink" href="#work">View work ↓</a></nav>
+  <div class="hero-copy">
+    <p class="eyebrow">THROUGH MY LENS</p>
+    <h1>From Tamil Nadu<br><em>to the Maldives.</em></h1>
+    <p class="intro">A personal collection of places, people, wildlife, light and little moments that made me stop and look twice.</p>
+    <a class="button" href="#work">Explore the collection</a>
+  </div>
+  <div class="hero-note">Photography by<br><strong>Thirupathi Raj Sharan N.</strong></div>
+</header>
+
+<main id="work">
+  <section class="section-head">
+    <div><p class="eyebrow">SELECTED WORK</p><h2>Moments worth keeping.</h2></div>
+    <p class="section-copy">Captured across journeys from Tamil Nadu to island life in the Maldives — with a soft spot for sunsets, wildlife, streets and unexpected light.</p>
+  </section>
+  <div class="filters" id="filters"></div>
+  <section class="gallery" id="gallery" aria-label="Photography gallery"></section>
+</main>
+
+<section class="about">
+  <div><p class="eyebrow">ABOUT THE PHOTOGRAPHER</p><h2>I photograph what makes me pause.</h2></div>
+  <div class="about-copy">
+    <p>Photography started as a hobby, but somewhere between everyday scenes and unfamiliar places, I began seeing stories in light, colour and small details.</p>
+    <p>This portfolio is a selection of those moments — from familiar landscapes in Tamil Nadu to the ocean, wildlife and slower rhythms of the Maldives.</p>
+  </div>
+</section>
+
+<footer>
+  <div><strong>SHARAN</strong> — THROUGH MY LENS</div>
+  <div>© 2026 Thirupathi Raj Sharan N.</div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="close" id="close" aria-label="Close">×</button>
+  <button class="prev" id="prev" aria-label="Previous">‹</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-img" alt="">
+    <div class="lightbox-caption"><span id="lightbox-title"></span><span id="lightbox-meta"></span></div>
+  </div>
+  <button class="next" id="next" aria-label="Next">›</button>
+</div>
+<script>const PHOTOS = [{"file": "photo-01.jpg", "original": "RUIDb35b05a34e824389a0ccad8b5032edfe.jpg", "orientation": "portrait", "index": 1, "group": "Nature & Wildlife", "title": "Quiet Eyes"}, {"file": "photo-02.jpeg", "original": "20230721_042044-01.jpeg", "orientation": "landscape", "index": 2, "group": "Tamil Nadu & Travel", "title": "A Place That Feels Like Home"}, {"file": "photo-03.jpg", "original": "RUID38b49610bd564172a1fd3e1755fbe387.jpg", "orientation": "portrait", "index": 3, "group": "Night & Long Exposure", "title": "After Dark"}, {"file": "photo-04.jpg", "original": "20231020_114252.jpg", "orientation": "portrait", "index": 4, "group": "Nature & Wildlife", "title": "Into the Canopy"}, {"file": "photo-05.jpeg", "original": "20240412_071206-01.jpeg", "orientation": "portrait", "index": 5, "group": "Tamil Nadu & Travel", "title": "City Light & Open Space"}, {"file": "photo-06.jpg", "original": "RUID31a86e214f2c47859160f93283cd7c82.jpg", "orientation": "landscape", "index": 6, "group": "Night & Long Exposure", "title": "Night Architecture"}, {"file": "photo-07.jpg", "original": "RUID6aba5cd73c114a009e029b0b44436c1b.jpg", "orientation": "portrait", "index": 7, "group": "Tamil Nadu & Travel", "title": "A Walk Through the Trees"}, {"file": "photo-08.jpg", "original": "LRM_20240303_092130 (1).jpg", "orientation": "portrait", "index": 8, "group": "Night & Long Exposure", "title": "The Road in Motion"}, {"file": "photo-09.jpg", "original": "DSC_0068.jpg", "orientation": "landscape", "index": 9, "group": "Night & Long Exposure", "title": "Light Beyond the Horizon"}, {"file": "photo-10.jpeg", "original": "20220206_194938-01.jpeg", "orientation": "portrait", "index": 10, "group": "Nature & Wildlife", "title": "Small Worlds"}, {"file": "photo-11.jpg", "original": "PXL_20231028_185306163.PORTRAIT.ORIGINAL.jpg", "orientation": "portrait", "index": 11, "group": "Nature & Wildlife", "title": "Wild Colour"}, {"file": "photo-12.jpg", "original": "RUIDeb154502b0fb48178f7213de3aae3e6f.jpg", "orientation": "landscape", "index": 12, "group": "Nature & Wildlife", "title": "Hidden Detail"}, {"file": "photo-13.jpg", "original": "_DSC1017.JPG", "orientation": "landscape", "index": 13, "group": "Nature & Wildlife", "title": "A Moment in Blue"}, {"file": "photo-14.jpg", "original": "PXL_20250221_134127339.MP.jpg", "orientation": "portrait", "index": 14, "group": "Maldives & Island Life", "title": "Island Geometry"}, {"file": "photo-15.jpg", "original": "RUIDeeced219d0fd4bda942df2c590115474.jpg", "orientation": "portrait", "index": 15, "group": "Nature & Wildlife", "title": "A Tiny Visitor"}, {"file": "photo-16.jpg", "original": "_DSC0240.JPG", "orientation": "landscape", "index": 16, "group": "Maldives & Island Life", "title": "Blue Hour"}, {"file": "photo-17.jpg", "original": "RUID8650f80e9a0143f791fa91a98d241e2a(1).jpg", "orientation": "portrait", "index": 17, "group": "Night & Long Exposure", "title": "Moonlight & Silhouette"}, {"file": "photo-18.jpg", "original": "PXL_20240805_132312829.LONG_EXPOSURE-01.COVER.jpg", "orientation": "landscape", "index": 18, "group": "Night & Long Exposure", "title": "The Purple Bloom"}, {"file": "photo-19.jpg", "original": "1776108803771.jpg", "orientation": "portrait", "index": 19, "group": "Tamil Nadu & Travel", "title": "Golden Shore"}, {"file": "photo-20.jpeg", "original": "20220204_184336-01 (1).jpeg", "orientation": "portrait", "index": 20, "group": "Tamil Nadu & Travel", "title": "Monsoon Mood"}, {"file": "photo-21.jpg", "original": "_DSC0973.JPG", "orientation": "landscape", "index": 21, "group": "Tamil Nadu & Travel", "title": "A Distant Shore"}, {"file": "photo-22.jpg", "original": "_DSC0246.JPG", "orientation": "landscape", "index": 22, "group": "Tamil Nadu & Travel", "title": "A Different View"}, {"file": "photo-23.jpg", "original": "_DSC0708.JPG", "orientation": "landscape", "index": 23, "group": "Tamil Nadu & Travel", "title": "Morning Light"}, {"file": "photo-24.jpeg", "original": "20220316_063131-01.jpeg", "orientation": "portrait", "index": 24, "group": "Tamil Nadu & Travel", "title": "A Quiet Journey"}, {"file": "photo-25.jpeg", "original": "IMG20180220072452-01.jpeg", "orientation": "portrait", "index": 25, "group": "Tamil Nadu & Travel", "title": "Patterns in Nature"}, {"file": "photo-26.jpg", "original": "DSC_0593.jpg", "orientation": "landscape", "index": 26, "group": "Maldives & Island Life", "title": "Mountain & Mist"}, {"file": "photo-27.jpg", "original": "1771248591528.jpg", "orientation": "portrait", "index": 27, "group": "Maldives & Island Life", "title": "A Study in Contrast"}, {"file": "photo-28.jpeg", "original": "20221207_080643-02.jpeg", "orientation": "landscape", "index": 28, "group": "Tamil Nadu & Travel", "title": "Wild at Rest"}, {"file": "photo-29.jpg", "original": "20240130_184548.jpg", "orientation": "portrait", "index": 29, "group": "Tamil Nadu & Travel", "title": "The Watchful One"}, {"file": "photo-30.jpg", "original": "RUID0ebf4b3f670f402e8ac73b6a89d4541d.jpg", "orientation": "portrait", "index": 30, "group": "Nature & Wildlife", "title": "Delicate Wings"}, {"file": "photo-31.jpg", "original": "RUID4f0b01a470044d228dd47846e9339663.jpg", "orientation": "portrait", "index": 31, "group": "Nature & Wildlife", "title": "Wild Portrait"}, {"file": "photo-32.jpg", "original": "_DSC0419(1).jpg", "orientation": "landscape", "index": 32, "group": "Nature & Wildlife", "title": "Forest Portrait"}];</script>
+<script src="script.js"></script>
+</body>
+</html>
